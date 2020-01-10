@@ -4,28 +4,20 @@ public class DataType {
 	
 	public static void main(String[] args) {
 		
-		int base = 150;
-		double height = 153.6;
-		boolean isTall = height > base; //부울 자료형에 대입되는 값은 참(true) 또는 거짓(false)만 가능
+		String a = "hello"; 
+		String b = "java";
+		String c = "hello";
 		
-		if  (isTall) { //isTall이 true일때
-			System.out.println("I am tall."); //출력
-		}
-		else System.out.println("No..."); //false일때 출력
+		System.out.println(a.equals(b));  //문자열 비교 시 무조건 equals를 사용해야 한다
+		System.out.println(a.equals(c));
 		
 		
 		
-		char a = 'a'; //한 개의 문자형 변수. 문자값을 ''로 감싸주어야 함
-		char b = 97; //아스키코드값에 대입하는 문자를 문자형으로 출력
-		char c = '\u0061'; //유니코드값에 대입하는 문자를 문자형으로 출력
+		String d = "hello"; //d와 e는 값은 같지만 서로 다른 객체
+		String e = new String("hello"); //new는 객체를 만들 때 사용한다. 근데 그냥 String a = "text" 라고 쓰는게 편하다.
 		
-		System.out.println(a); //a 출력
-		System.out.println(b); //a 출력
-		System.out.println(c); //a 출력
-		
-		
-		
-		
+		System.out.println(d.equals(e)); //true
+		System.out.println(d==e); //==는 두 개의 자료형이 동일한 객체인지를 판별하는 연산자이므로 false 리턴
 		
 	}
 
