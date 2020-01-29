@@ -4,19 +4,26 @@ public class DataType {
 	
 	public static void main(String[] args) {
 		
-		StringBuffer mybuffer = new StringBuffer(); //객체 생성
+		//StringBuffer 사용
+		StringBuffer sb = new StringBuffer(); //객체 생성
 		
-		mybuffer.append("hello"); //append : 문자열추가
-		mybuffer.append(" ");
-		mybuffer.append("jump to java");
-		mybuffer.append(" !");
+		sb.append("hello"); 		//문자열 추가
+		sb.append(" "); 			//문자열 추가
+		sb.append("jump to java");  //문자열 추가
+		sb.append(" !"); 			//문자열 추가
 		
-		mybuffer.insert(0, "Oh "); //insert : 0번째 위치에 삽입
+		System.out.println(sb.toString()); //toString() : String 자료형으로 변경
 		
-		System.out.println(mybuffer.toString()); //toString() : String자료형으로 변경
 		
-		System.out.println(mybuffer.substring(3,7)); //substring : 3번째 위치부터 7번째 위치까지의 문자열 출력
+		//String 사용
+		String temp = ""; //객체 생성
 		
+		temp += "hello"; 		//객체 생성(String 자료형에 + 연산이 있을 때마다 새로운 String 객체 생성)
+		temp += " "; 			//객체 생성
+		temp += "jump to java"; //객체 생성
+		temp += " !"; 			//객체 생성
+		
+		System.out.println(temp);
 	}
 
 }
